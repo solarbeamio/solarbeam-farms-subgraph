@@ -1,0 +1,14 @@
+type Transaction @entity {
+    id: ID!
+    timestamp: BigInt!
+    wallet: String!
+    action: String!
+    amount: BigDecimal!
+    pool: String!
+}
+#
+#type Pool @entity {
+#    id: ID!
+#    totalAmount: BigDecimal
+#    transactions: [Transaction!] @derivedFrom(field: "pool")
+#}
